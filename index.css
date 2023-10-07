@@ -1,0 +1,144 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Open+Sans&family=Raleway:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@500&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(./assets/avengers1.jpg);
+    background-position: center;
+    background-attachment:fixed ;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #42124c;
+    padding: 10px;
+    border-bottom: solid 3px white;
+}
+
+
+.logo{
+    padding: 50px;
+    color: white;
+    font-family: raleway;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.logo span{
+   color: #8aff00;
+}
+
+.menu{
+    display:flex;
+    list-style: none;
+    gap: 10px;
+    color: white;
+    align-items: center;
+}
+
+
+
+.menu li{
+    padding: 10px;
+    font-family: raleway;
+    font-weight: 600;
+    box-sizing: border-box;
+
+    
+}
+
+.menu li:hover{
+    color: #8aff00;
+}
+
+section{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+section input{
+    margin: 20px;
+    padding: 7px;
+    padding-right: 5x;
+    border-radius: 15px;
+    border: solid 2px #8aff00;
+    background: transparent;
+    width: 320px;
+    transition: 0.2s;
+
+}
+
+section input:hover{
+    border: solid 2px white;
+}
+
+section input:focus{
+    
+    outline: 0;
+}
+
+
+.filmes-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  
+}
+
+.filmes{
+    height: 300px;
+    width: 150px;
+    background-color: transparent;
+    color: white;
+    font-family: raleway;
+    padding-bottom: 10px;
+
+}
+.filmes-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: 0.2s;
+    padding-bottom: 10px;
+    border-radius: 15px;
+}
+
+.filmes span{
+    font-size: 13px;
+    padding-bottom: 10px;
+
+}
+
+.filmes h3{
+    font-size: 15px;
+}
+
+.filmes-img img:hover{
+    scale: 1.1;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+}
+
+@media (max-width:539px){
+    .filmes-section{
+        grid-template-columns: 1fr 1fr;
+    }
+}
